@@ -1,0 +1,135 @@
+<html>
+
+<head>
+
+    <!-- codificação -->
+    <meta charset="utf-8">
+
+    <!-- título do site-->
+    <title>UniExames</title>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- style -->
+    <!-- <style> 
+    .div-text{
+        background-color: #6A5ACD;
+        border-radius:0%;
+        width:1225px;
+        height:120px;
+        padding:10px;
+        border: 4px solid #7B68EE;
+        color: snow;
+        font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+    }
+    </style> -->
+
+</head>
+
+<body>
+
+    <!-- Os títulos -->
+    <div class="div-text-header">
+        <center><b>
+                <h1>UNIexames</h1>
+            </b></center>
+        <center>
+            <h4>ACREDITAMOS QUE CUIDAR DA SAÚDE, NÃO PRECISA SER CARO NEM COMPLICADO</h4>
+        </center>
+
+
+        <center><button type="submit"><a id="button" href="UniExames.sobre.html" target="_self">UNIexames</a></button>
+
+            <button type="submit"><a id="button" href="Blog.html" target="_self">Blog</a></button>
+
+            <button type="submit"><a id="button" href="unidades.html" target="_self">Unidades</a></button>
+
+            <button type="submit"><a id="button" href="convenio.html" target="_self">Convênios Aceitos</a></button>
+
+            <button type="submit"><a id="button" href="conta.html" target="_self">Minha Conta</a></button>
+
+            <button type="submit"><a id="button" href="resultado.html" target="_self">Resultados</a></button>
+
+        </center>
+
+
+    </div>
+
+    <hr /><br /><br /><br /><!-- separação -->
+
+    <!-- Corpo-->
+
+
+    <!-- Formulário 1 -->
+    <div id="form_resultado">
+        <p>Para acessar o resultado dos seus exames, é só informar o número do seu protocolo e sua senha nos campos
+            abaixo:
+        </p>
+        <br />
+
+        <form action="" method="Post" enctype="multipart/form-date">
+
+            <div id="resultado">
+                <label for="">Protocolo</label><br>
+                <input id="num_protocolo" type="number" name="protocolo" required="required"
+                    placeholder="0000.0000.0000">
+            </div>
+
+            <div id="resultado">
+                <label for="">Senha</label><br>
+                <input id="senha_protocolo" type="password" name="Senha" required="required" placeholder="Senha">
+            </div>
+
+            <div id="resultado">
+                <button onclick="conResultado()" class="btn_form" type="submit">Acessar</button>
+            </div>
+        </form>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <hr /><!-- separação -->
+
+    <!-- style -->
+    <!-- <style> 
+    .div-text{
+        background-color: #008B8B;
+        border-radius:1%;
+        width:1340px;
+        height:140px;
+        border: 4px solid #7B68EE;
+        padding:1px;
+        color: snow;
+        font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+    </style> -->
+
+    <!-- títulos style -->
+    <div class="div-text-footer">
+        <center id="antfinal">UNIexames</center>
+        <center id="final">2020 - © Copyright UNIexames</center>
+        <center><img src="img/03.jpg" alt="some text" width=100></center>
+    </div>
+
+    <hr /><!-- separação -->
+
+    <script>
+        function conResultado() {
+            let protocolo = document.getElementById("num_protocolo");
+            let senhaProtocolo = document.getElementById("senha_protocolo");
+
+            if (
+                protocolo.value != "" &&
+                senhaProtocolo.value != ""
+            ) {
+                alert("Resultado indisponível!\nTente novamente mais tarde.");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+
+/* Cor do fundo do site */
+body {
+	 background-color:#F5F5F5; 
+} 
+
+/* Botões */
+button{
+    text-decoration: none;
+    /* opacity: 0.5; */
+    letter-spacing: 2.5px;
+    font-size:16px;
+    /* color: #008080; */
+    /* font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; */
+    background-color:#f0efeb;
+	/* border: solid #000000 1px; */
+	border: none;
+    border-radius: 2px;
+    padding:5px;
+    /* text-shadow: 1px 2px 1px #000000; */
+    box-shadow: none;
+    -webkit-transition: all 0.44s ease;
+    -moz-transition: all 0.44s ease;
+    -o-transition: all 0.44s ease;
+    transition: all 0.44s ease;
+}
+
+button:hover{
+    font-weight: bold;
+    opacity: 0.9;
+    background-color: grey;
+    border: 1px solid black;
+	box-shadow: none;
+	color: #212529;
+} 
+
+#button{
+	text-decoration: none;
+	color: #6A5ACD;
+	font-weight: bold;
+	font-family:arial;
+	
+}
+
+#form_conta{
+	display: block;
+  	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
+	text-align: center;		
+}
+
+#form_cadastro{
+	display: block;
+  	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	text-align: center;	
+	
+}
+
+#form_esqueceu{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 20%;
+  	text-align: center;	
+}
+
+#form_resultado{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 20%;
+  	text-align: center;	
+}
+
+.btn_form{	
+	background-color: #247ba0;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;	
+	height: 26px;	
+}
+
+#btn_cad{
+	text-decoration: none;
+	color: white;	
+}
+
+#btn_entrar{
+	margin-top: 2px;
+}
+
+#btn_enviar{
+	margin-top: 2px;
+}
+
+
+/* Largura dos campos input no formulario de cadastro */
+input[type=text], input[type=password], input[type=date], select[id=genero], select[id=doc], input[type=number]{
+	height: 30px;
+	
+}
+
+/* Alinhamento dos campos no formulario de cadastro */
+#cadastro, #resultado{
+	text-align: left;
+	margin-top: 3px;	
+}
+
+.cadastro{
+	width: 100%;
+}
+
+
+/* estilos titulo UNIexames */
+h1 {
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 30px; 
+     margin-top: 10px;
+	 color: #000000;
+	 font-weight: bold;
+	 text-align:center;
+	 text-decoration: overline;
+}
+h4 {
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 16px; 
+	 color: #FFFFFF;
+	 font-weight: bold;
+	 text-align:center;
+	 text-decoration: none;
+}
+
+.div-text-header{
+	/* background-color: #008080;
+	border-radius:0%;
+	width:100%;
+	height:130px;
+	padding:10px;
+	border: 4px solid #7B68EE !important;
+	font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+	color: snow; */
+
+
+	/* background-color: #008B8B; */
+	background-image: url(./img/img_corona_header.jpg);	
+	border-radius: 1%;
+	width: 1340px;
+	height: 190px;
+	/* border: 4px solid #7B68EE; */
+	padding: 1px;
+	color: snow;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+	
+.div-text-footer{
+	/* background-color:#008080; */
+	background-image: url(./img/img_corona_header.jpg);	
+	border-radius:1%;
+	width:1340px;
+	height:140px;
+	/* border: 4px solid #7B68EE; */
+	padding:1px;
+	color: #40E0D0;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#link_rec_senha{
+	text-decoration: none;
+}
+
+
+
+/* estilo de cada tópico*/
+h2 { 
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 30px;  
+	 color: #000000;
+	 font-weight: bold;
+	 text-align:center;
+	 text-decoration: none;
+}
+
+/* estilo dos paragrafos */
+p { 
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px; 
+	color: #696969;
+	text-align: center;
+	text-decoration: none;
+	
+}
+
+
+/* estilo inicial sobre*/
+h6 { 
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 16px; 
+	 color: #696969;
+	 text-align:center;
+	 text-decoration: none;
+}
+
+/* link virus */
+#link {
+	 text-decoration: none;
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 15px; 
+	 color: #8A2BE2;
+}
+
+#link:hover {
+	 text-decoration: none;
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 15px; 
+	 color: #000000;
+}
+
+/* alinhamento virus2 */
+#linha {
+		left: 550px;
+		right: 200px;
+}
+
+/* estilo dos paragrafos virus */
+h3 {
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 16px; 
+	 color: #696969;
+	 text-align: center;
+	 font-weight: normal;
+	 text-decoration: none;
+	 /* margin-left: auto;
+     margin-right: auto; */
+}
+h5 {
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 16px; 
+	 color: #696969;
+	 text-align: justify;
+	 font-weight: normal;
+	 text-decoration: none;
+	 margin-left: 200px;
+     margin-right: 200px;
+}
+
+#titulo {
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 20px; 
+	 color: #000000;
+	 text-align: center;
+	 text-decoration: none;
+	 font-weight: bold;
+}
+#texto {
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 15px; 
+	 color: #000000;
+	 text-align: center;
+	 text-decoration: none;
+}
+
+
+
+
+/* estilo Topicos pagina inicial*/
+#topico2 {
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 18px; 
+	 color: #696969;
+	 left: 370px;
+	 position: absolute;
+}
+
+#topico { 
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 20px; 
+	 color: #6A5ACD;
+	 font-weight: bold; 
+	 left: 310px;
+	 position: absolute;
+}
+
+/*imagem final sobre*/
+#img {
+	position: absolute;
+	top: 1515px;
+	left: 670px;
+
+}
+
+/*estilo final UNIexames*/
+#antfinal {
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 25px; 
+     margin-top: 20px;
+     height: 39px;
+	 color: #000000;
+	 font-weight: bold;
+	 text-align:center;
+	 text-decoration: overline;
+}
+#final {
+	 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     margin-top: 2px;
+     height: 30px;
+	 color: #000000;
+	 text-align:center;
+	 text-decoration: none;
+}
+

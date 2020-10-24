@@ -1,0 +1,192 @@
+<html>
+
+<head>
+
+    <!-- codificação -->
+    <meta charset="utf-8">
+
+    <!-- título do site-->
+    <title>UniExames</title>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- style -->
+    <!-- <style> 
+    .div-text{
+        background-color: #6A5ACD;
+        border-radius:0%;
+        width:1225px;
+        height:120px;
+        padding:10px;
+        border: 4px solid #7B68EE;
+        color: snow;
+        font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+    }
+    </style> -->
+
+</head>
+
+<body>
+
+    <!-- Os títulos -->
+    <div class="div-text-header">
+        <center><b>
+                <h1>UNIexames</h1>
+            </b></center>
+        <center>
+            <h4>ACREDITAMOS QUE CUIDAR DA SAÚDE, NÃO PRECISA SER CARO NEM COMPLICADO</h4>
+        </center>
+
+
+        <center><button type="submit"><a id="button" href="UniExames.sobre.html" target="_self">UNIexames</a></button>
+
+            <button type="submit"><a id="button" href="Blog.html" target="_self">Blog</a></button>
+
+            <button type="submit"><a id="button" href="unidades.html" target="_self">Unidades</a></button>
+
+            <button type="submit"><a id="button" href="convenio.html" target="_self">Convênios Aceitos</a></button>
+
+            <button type="submit"><a id="button" href="conta.html" target="_self">Minha Conta</a></button>
+
+            <button type="submit"><a id="button" href="resultado.html" target="_self">Resultados</a></button>
+
+            <!-- <button type="submit"><a id="button" href="teste.html"
+                    target="_self">Teste</a></button> -->
+
+        </center>
+
+
+    </div>
+    <hr /><!-- separação -->
+
+    <!-- Corpo-->
+
+    <!-- Formulário 1 -->
+    <div id="form_cadastro">
+        <form id="" action="" method="Post" enctype="multipart/form-date">
+            <h3>Cadastro</h3>
+
+            <div id="cadastro">
+                <label for="">Nome</label><br>
+                <input id="novo_nome" class="cadastro" type="text" name="e-mail" required="required"
+                    placeholder="Nome completo">
+            </div>
+
+            <div id="cadastro">
+                <label for="">Gênero</label><br>
+                <select id="genero" required="required" name="Genêro">
+                    <option selected="selected" value="">Selecione</option>
+                    <option value="1">Homem</option>
+                    <option value="2">Mulher</option>
+                    <option value="3">Trans Homem</option>
+                    <option value="4">Trans Mulher</option>
+                    <option value="5">Transgênero</option>
+                </select>
+            </div>
+
+            <div id="cadastro">
+                <label for="">E-mail</label><br>
+                <input id="novo_email" class="cadastro" type="text" name="e-mail" required="required"
+                    placeholder="nome@exemplo.com.br">
+            </div>
+
+            <div id="cadastro">
+                <label for="">Telefone</label><br>
+                <input class="cadastro" type="text" id="novo_telefone" name="Telefone" placeholder=""
+                    required="required">
+            </div>
+
+            <div id="cadastro">
+                <label for="">Nascimento</label><br>
+                <input id="novo_nascimento" type="date" name="Nascimento" required="required" placeholder="">
+            </div>
+
+            <div id="cadastro">
+                <label for="">Tipo de Documento</label><br>
+                <select id="doc" required="required" name="Genêro">
+                    <option value="1">CPF</option>
+                    <option value="2">RG / RNE</option>
+                </select>
+            </div>
+
+            <div id="cadastro">
+                <label for="">Documento</label><br>
+                <input id="novo_documento" class="cadastro" type="text" name="documento" required="required"
+                    placeholder="">
+            </div>
+
+            <div id="cadastro">
+                <label for="">Senha</label><br>
+                <input id="nova_senha" class="cadastro" type="password" name="Senha" required="required" placeholder="">
+            </div>
+
+            <div id="cadastro">
+                <label for="">Confirmar senha</label><br>
+                <input id="confirmar_senha" class="cadastro" type="password" name="Senha" required="required"
+                    placeholder="">
+            </div>
+
+            <div id="cadastro">
+                <button onclick="cadastrar()" class="btn_form" type="submit">Cadastrar</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <hr /><!-- separação -->
+
+
+    <!-- style -->
+    <!-- <style> 
+    .div-text{
+        background-color: #008B8B;
+        border-radius:1%;
+        width:1340px;
+        height:140px;
+        border: 4px solid #7B68EE;
+        padding:1px;
+        color: snow;
+        font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+    </style> -->
+
+    <!-- títulos style -->
+    <div class="div-text-footer">
+        <center id="antfinal">UNIexames</center>
+        <center id="final">2020 - © Copyright UNIexames</center>
+        <center><img src="img/03.jpg" alt="some text" width=100></center>
+    </div>
+
+    <hr /><!-- separação -->
+
+    <script>
+        function cadastrar() {
+            let nome = document.getElementById("novo_nome");
+            let genero = document.getElementById("genero");
+            let email = document.getElementById("novo_email");
+            let telefone = document.getElementById("novo_telefone");
+            let nascimento = document.getElementById("novo_nascimento");
+            let documento = document.getElementById("novo_documento");
+            let senha = document.getElementById("nova_senha");
+            let confirmarSenha = document.getElementById("confirmar_senha");
+
+            if (
+                nome.value != "" &&
+                genero.value == true &&
+                email.value != "" &&
+                telefone.value != "" &&
+                nascimento.value != "" &&
+                documento.value != "" &&
+                senha.value != "" &&
+                confirmarSenha.value != ""
+            ) {
+                alert("Cadastro realizado com sucesso!");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

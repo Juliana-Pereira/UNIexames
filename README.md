@@ -1,2 +1,2 @@
 # UNIexames
-Site de demonstração, utilizado em um projeto acadêmico.
+Site sobre uma clinica de exames, utilizado em um projeto de fim acadêmico.
